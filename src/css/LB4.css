@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+.container{
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    background-color: #FBF8A9;
+    padding: 30px 0;
+}
+.section > .container{
+    background: url("../assets/images/LB4/bg_page.png") repeat-y;
+    background-position: center;
+    background-size: contain;
+    padding: 15px 95px;
+}
+.advice{
+    display: flex;
+    align-items: center;
+
+    border-radius: 16px;
+    border: solid 3px #000;
+    padding: 10px;
+}
+.advice span{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.advice strong{
+    font-family: Baskerville, "Palatino Linotype", Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-right: 5px;
+}
+
+.header__banner{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+.header__banner img{
+    object-position: center;
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    width: auto;
+    height: 100%;
+}
+.header__title{
+    font-family: Baskerville, "Palatino Linotype", Times, serif;
+    font-size: 48px;
+}
+.header__subtitle{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.header__item{
+    display: flex;
+    align-items: center;
+}
+.item-header__title{
+    font-family: Baskerville, "Palatino Linotype", Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 6px;
+}
+.item-header__info{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.item-header__info::after{
+    content: "}";
+}
+.item-header__info::before{
+    content: "{";
+}
+.header__info{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 16px 0;
+}
+.header__info p:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.about__title{
+    font-family: Baskerville, "Palatino Linotype", Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.about__info{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.about__info em{
+    font-style: normal;
+    text-decoration: underline;
+}
+.about__advice{
+    margin: 16px 0;
+}
+.link-about{
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #000;
+}
+.link-about:not(:last-child){
+    margin-bottom: 16px;
+}
+.link-about__title{
+    color: #fff;
+    font-family: Baskerville, "Palatino Linotype", Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.link-about__text{
+    color: #fff;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
