@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    position: relative;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1262px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    min-height: 120px;
+    background-color: peachpuff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #fff;
+}
+
+.main .container{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.main__image{
+    height: 300px;
+    position: relative;
+    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__image:hover{
+    height: 345px;
+}
+.main__image img{
+    object-fit: cover;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__image:hover img{
+    height: calc(100% - 45px);
+    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__image span{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    border-radius: 0 0 16px 16px;
+    background-color: #666;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+
+    height: 0;
+    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__image:hover span{
+    height: 45px;
+}
+
+.question{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: peachpuff;
+    width: 100px;
+    height: 100px;
+
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+
+    position: fixed;
+    z-index: 3;
+    right: 30px;
+    bottom: 30px;
+
+    transition: filter 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.question span{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.question .showed{
+    font-size: 50px;
+}
+.question .hidden{
+    transform: scale(0);
+}
+
+.question:hover{
+    filter: drop-shadow(0 0 10px peachpuff);
+}
+.question:hover .showed{
+    transform: scale(0);
+}
+.question:hover .hidden{
+    transform: scale(1);
+}
