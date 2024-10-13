@@ -1,0 +1,35 @@
+body, p, h1, h2, h3, h4, h5, h6, pre{
+    margin: 0;
+}
+
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper{
+    padding: 60px 0;
+}
+.wrapper__section:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.intro, .footer{
+    text-align: center;
+}
+.intro__title{
+    font-size: 32px;
+}
+
+.style__inner{
+    background-color: #000;
+    padding: 16px;
+}
+.style__inner > *{
+    color: #fff;
+}
+.style__title{
+    font-size: 24px;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,105 @@
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Стилизация</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <section class="wrapper__intro wrapper__section intro">
+                <div class="container">
+                    <h1 class="intro__title">Подключение CSS</h1>
+                    <p class="intro__info">
+                        CSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
+                        Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, например, к SVG или XUL.<br>Существует три способа подключения CSS к документу HTML.
+                    </p>
+                </div>
+            </section>
+
+            <section class="wrapper__style wrapper__style_inline wrapper__style_with-footer wrapper__section style style_inline style_with-footer">
+                <div class="container">
+                    <div class="style__inner style_inline__inner">
+                        <h2 class="style__title style_inline">Встроенные (внутриэлементные) стили</h2>
+                        <p class="style__description style_inline__description style_with-footer__description">
+                            При внутриэлементном или строчном подключении стиля, он определяется непосредственно внутри тега HTML при помощи атрибута style.
+                            Это выглядит следующим образом:
+                        </p>
+                        <pre class="style__example style_inline__example style_with-footer__example">        
+                            &lt;p style="color: red"&gt; текст &lt;/p&gt;
+                        </pre>
+                        <p class="style__explanation style_inline__explanation style_with-footer__explanation">
+                            Данное определение сделает параграф красного цвета.
+                            Однако, как вы, наверное, помните, лучший подход – это когда HTML документ полностью свободен от элементов и атрибутов визуального представления, поэтому внутриэлементный способ определения стилей следует стараться избегать.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper__style wrapper__style_into wrapper__section style style_into">
+                <div class="container">
+                    <div class="style__inner style_into__inner">
+                        <h2 class="style__title style_into">Внутренние стили</h2>
+                        <p class="style__description style_into__description">
+                            Внутридокументые стили используются для определения стилей целой веб-страницы. В теге head определяется тег style, в котором задаются все стили для веб-страницы.
+                            Такое определение выглядит следующим образом:
+                        </p>
+                        <pre class="style__example style_into__example">        
+                            &lt;head&gt;
+                            ...
+                                &lt;style type="text/css"&gt;
+                                    p {
+                                        color: red; 
+                                    }
+                                &lt;/style&gt; 
+                            ...
+                            &lt;/head&gt; 
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper__style wrapper__style_out wrapper__section style style_out">
+                <div class="container">
+                    <div class="style__inner style_out__inner">
+                        <h2 class="style__title style_out__title">Внешние стили</h2>
+                        <p class="style__description style_out__description">
+                            Внешние стили используются для подключения одновременно ко многим страницам сайта. Обычно это отдельный CSS файл, который выглядит приблизительно следующим образом:
+                        </p>
+                        <pre class="style__example style_out__example">        
+                            p { 
+                                color: red; 
+                            }
+                
+                            a { 
+                                color: blue; 
+                            }
+                        </pre>
+                        <p class="style__description style_out__description">
+                            Если имя этого файла будет "style.css", то его подключают к HTML документу следующим образом:
+                        </p>
+                        <pre class="style__example style_out__example">        
+                            &lt;!DOCTYPE HTML&gt; 
+                            &lt;html&gt; 
+                            &lt;head&gt;
+                                &lt;title&gt;Пример CSS&lt;/title&gt; 
+                                &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+                            ...
+                            &lt;/head&gt;
+                        </pre>
+                    </div> 
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <address class="footer__text">
+                        Творец: Лукаш Максим
+                    </address>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
