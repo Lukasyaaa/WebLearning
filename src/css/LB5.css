@@ -16,7 +16,7 @@ mark{
 }
 
 .wrapper{
-    background: url("./images/bg.jpg");
+    background: url("../assets/images/LB5/bg.jpg");
 }
 .container_wrapper{
     max-width: 1000px;
@@ -32,11 +32,11 @@ mark{
 }
 
 .header__menu{
-    background: url("./images/bgcontainer.jpg") repeat-y;
+    background: url("../assets/images/LB5/bgcontainer.jpg") repeat-y;
     background-size: cover;
 }
 .header__menu > .container_bigger{
-    background: url("./images/bgcontent.gif") left top no-repeat;
+    background: url("../assets/images/LB5/bgcontent.gif") left top no-repeat;
     background-size: cover;
 
     min-height: 111px;
@@ -58,20 +58,20 @@ mark{
 }
 
 .header__banner{
-    background: url("./images/bgcontainer.jpg") repeat-y;
+    background: url("../assets/images/LB5/bgcontainer.jpg") repeat-y;
     background-size: contain;
 
     position: relative;
     z-index: 1;
 }
 .header__banner > .container_bigger{
-    background: url("./images/header.jpg") left top no-repeat;
+    background: url("../assets/images/LB5/header.jpg") left top no-repeat;
     background-size: cover;
 }
 .header__banner > .container_bigger::after,
 .header__banner > .container_bigger::before{
     content: "";
-    background: url("./images/header_line.gif");
+    background: url("../assets/images/LB5/header_line.gif");
 
     position: absolute;
     left: 35px;
@@ -100,13 +100,13 @@ mark{
 }
 
 .main__info:first-child > .container_bigger{
-    background: url("./images/bgcontent.gif") left top no-repeat;
+    background: url("../assets/images/LB5/bgcontent.gif") left top no-repeat;
     background-size: contain;
     
     padding-top: 75px;
 }
 .main__info{
-    background: url("./images/bgcontainer.jpg") repeat-y;
+    background: url("../assets/images/LB5/bgcontainer.jpg") repeat-y;
     background-size: contain;
 
     position: relative;
@@ -118,7 +118,7 @@ mark{
 }
 .main__info:not(:last-child)::after{
     content: "";
-    background: url("./images/content_line.gif");
+    background: url("../assets/images/LB5/content_line.gif");
     width: 550px;
     height: 20px;
 
@@ -177,11 +177,11 @@ mark{
     font-size: 23px;
     color: rgba(74, 66, 56, 0.7);
 
-    background: url("./images/bgcontainer.jpg") repeat-y;
+    background: url("../assets/images/LB5/bgcontainer.jpg") repeat-y;
     background-size: cover;
 }
 .footer > .container_bigger{
-    background: url("./images/bgfooter.gif") left bottom no-repeat;
+    background: url("../assets/images/LB5/bgfooter.gif") left bottom no-repeat;
     background-size: contain;
 
     padding-top: 40px;
